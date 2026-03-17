@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":autodetectPinVersions",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":enableRenovate",
+    ":enableVulnerabilityAlerts",
+    "group:monorepos",
+    "group:recommended",
+    ":label(renovate)",
+    "github>whitesource/merge-confidence:beta",
+    ":semanticCommitTypeAll(build)",
+    ":timezone(Europe/Berlin)",
+    "workarounds:all",
+    ":gitSignOff"
+  ],
+  "separateMajorMinor": true,
+  "separateMinorPatch": true,
+  "separateMultipleMajor": true,
+  "addLabels": [
+    "manager:{{{manager}}}",
+    "updateType:{{{updateType}}}"
+  ]
+}
