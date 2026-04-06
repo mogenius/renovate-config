@@ -1,0 +1,69 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>mogenius/renovate-config//mogenius-inherited-config.json#main"
+  ],
+  "platformAutomerge": true,
+  "automergeSchedule": [
+    "* 0-6 * * 1-5"
+  ],
+  "minimumReleaseAgeBehaviour": "timestamp-optional",
+  "addLabels": [
+    "gitops"
+  ],
+  "argocd": {
+    "managerFilePatterns": [
+      "/.*\\.ya?ml$/"
+    ]
+  },
+  "flux": {
+    "managerFilePatterns": [
+      "/.*\\.ya?ml$/"
+    ]
+  },
+  "kubernetes": {
+    "managerFilePatterns": [
+      "/.*\\.ya?ml$/"
+    ]
+  },
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true,
+      "addLabels": [
+        "automerge"
+      ]
+    },
+    {
+      "matchPackageNames": [
+        "k3s-io/k3s",
+        "ghcr.io/siderolabs/installer",
+        "ghcr.io/siderolabs/kubelet"
+      ],
+      "automerge": false,
+      "reviewers": [
+        "team:operations"
+      ]
+    },
+    {
+      "matchDepNames": [
+        "renovate/renovate",
+        "kube-prometheus-stack"
+      ],
+      "schedule": [
+        "* * * * SUN"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "reviewers": [
+        "team:mogenius/operations"
+      ]
+    }
+  ]
+}
