@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": ["Update platformVersion in PlatformConfig manifests"],
+      "managerFilePatterns": [
+        "/\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "kind:\\s+PlatformConfig[\\s\\S]*?platformVersion:\\s+(?<currentValue>[^\\s]+)"
+      ],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "mogenius/platform-defaults"
+    }
+  ]
+}
