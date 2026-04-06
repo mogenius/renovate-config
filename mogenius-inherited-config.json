@@ -22,5 +22,13 @@
   "addLabels": [
     "manager:{{{manager}}}",
     "updateType:{{{updateType}}}"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "pinDigests": true
+    }
   ]
 }
