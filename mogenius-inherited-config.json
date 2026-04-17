@@ -29,6 +29,33 @@
         "github-actions"
       ],
       "pinDigests": true
+    },
+    {
+      "matchDepNames": [
+        "renovate/renovate",
+        "kube-prometheus-stack"
+      ],
+      "schedule": [
+        "* * * * SUN"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "automerge": true
+    },
+    {
+      "matchDepNames": [
+        "renovate/renovate",
+        "kube-prometheus-stack"
+      ],
+      "schedule": [
+        "* * * * SUN"
+      ],
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
     }
   ]
 }
