@@ -18,6 +18,19 @@ Add the following to your repository's `renovate.json`:
 }
 ```
 
+### Automerge non-major updates
+
+Repositories that are not using the gitops preset can opt into automerging minor, patch and digest updates:
+
+```json
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>mogenius/renovate-config//presets/automerge-non-major.json#main"
+  ]
+}
+```
+
 ## What's included
 
 - **Recommended base config** with vulnerability alerts and dependency dashboard
