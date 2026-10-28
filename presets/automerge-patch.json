@@ -1,14 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "description": "Automerge all non-major updates",
+  "description": "Automerge patch updates",
   "packageRules": [
     {
       "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "digest",
-        "pin",
-        "pinDigest"
+        "patch"
       ],
       "automerge": true,
       "addLabels": [
