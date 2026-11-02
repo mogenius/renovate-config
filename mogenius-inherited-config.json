@@ -96,7 +96,7 @@
         "/^.*$/"
       ],
       "matchStrings": [
-        "[\"']{0,1}(?<currentValue>[^\\s\"']*)[\"']{0,1}\\s+#\\s+(renovate:\\s+)?datasource=[\"']{0,1}(?<datasource>[^\\s\"']+)[\"']{0,1}\\s+depName=[\"']{0,1}(?<depName>[^\\s\"']+)[\"']{0,1}(\\s+currentDigest=[\"']{0,1}(?<currentDigest>[^\\s\"']+)[\"']{0,1})?(\\s+depType=[\"']{0,1}(?<depType>[^\\s\"']+)[\"']{0,1})?(\\s+extractVersion=[\"']{0,1}(?<extractVersion>[^\\s\"']+)[\"']{0,1})?(\\s+indentation=[\"']{1}(?<indentation>[\\s\"']+)[\"']{1})?(\\s+packageName=[\"']{0,1}(?<packageName>[^\\s\"']+)[\"']{0,1})?(\\s+registryUrl=[\"']{0,1}(?<registryUrl>[^\\s\"']+)[\"']{0,1})?(\\s+versioning=[\"']{0,1}(?<versioning>[^\\s\"']+)[\"']{0,1})?"
+        "[\"']{0,1}(?<currentValue>[^\\s\"']*)[\"']{0,1}[ \\t]+#\\s+(renovate:\\s+)?datasource=[\"']{0,1}(?<datasource>[^\\s\"']+)[\"']{0,1}\\s+depName=[\"']{0,1}(?<depName>[^\\s\"']+)[\"']{0,1}(\\s+currentDigest=[\"']{0,1}(?<currentDigest>[^\\s\"']+)[\"']{0,1})?(\\s+depType=[\"']{0,1}(?<depType>[^\\s\"']+)[\"']{0,1})?(\\s+extractVersion=[\"']{0,1}(?<extractVersion>[^\\s\"']+)[\"']{0,1})?(\\s+indentation=[\"']{1}(?<indentation>[\\s\"']+)[\"']{1})?(\\s+packageName=[\"']{0,1}(?<packageName>[^\\s\"']+)[\"']{0,1})?(\\s+registryUrl=[\"']{0,1}(?<registryUrl>[^\\s\"']+)[\"']{0,1})?(\\s+versioning=[\"']{0,1}(?<versioning>[^\\s\"']+)[\"']{0,1})?"
       ]
     },
     {
@@ -144,7 +144,7 @@
         "/^.*$/"
       ],
       "matchStrings": [
-        "[\"']{0,1}((?<depNameAndRegistry>[^\\s\"']*):)?(?<currentValue>[^\\s\"']+)[\"']{0,1}\\s+#\\s+(renovate:\\s+)?datasource=[\"']{0,1}(?<datasource>[^\\s\"']+)[\"']{0,1}\\s+depName=[\"']{0,1}(?<depName>[^\\s\"']+)[\"']{0,1}(\\s+currentDigest=[\"']{0,1}(?<currentDigest>[^\\s\"']+)[\"']{0,1})?(\\s+depType=[\"']{0,1}(?<depType>[^\\s\"']+)[\"']{0,1})?(\\s+extractVersion=[\"']{0,1}(?<extractVersion>[^\\s\"']+)[\"']{0,1})?(\\s+indentation=[\"']{1}(?<indentation>[\\s\"']+)[\"']{1})?(\\s+packageName=[\"']{0,1}(?<packageName>[^\\s\"']+)[\"']{0,1})?(\\s+registryUrl=[\"']{0,1}(?<registryUrl>[^\\s\"']+)[\"']{0,1})?(\\s+versioning=[\"']{0,1}(?<versioning>[^\\s\"']+)[\"']{0,1})?"
+        "[\"']{0,1}((?<depNameAndRegistry>[^\\s\"']*):)?(?<currentValue>[^\\s\"']+)[\"']{0,1}[ \\t]+#\\s+(renovate:\\s+)?datasource=[\"']{0,1}(?<datasource>[^\\s\"']+)[\"']{0,1}\\s+depName=[\"']{0,1}(?<depName>[^\\s\"']+)[\"']{0,1}(\\s+currentDigest=[\"']{0,1}(?<currentDigest>[^\\s\"']+)[\"']{0,1})?(\\s+depType=[\"']{0,1}(?<depType>[^\\s\"']+)[\"']{0,1})?(\\s+extractVersion=[\"']{0,1}(?<extractVersion>[^\\s\"']+)[\"']{0,1})?(\\s+indentation=[\"']{1}(?<indentation>[\\s\"']+)[\"']{1})?(\\s+packageName=[\"']{0,1}(?<packageName>[^\\s\"']+)[\"']{0,1})?(\\s+registryUrl=[\"']{0,1}(?<registryUrl>[^\\s\"']+)[\"']{0,1})?(\\s+versioning=[\"']{0,1}(?<versioning>[^\\s\"']+)[\"']{0,1})?"
       ]
     },
     {
