@@ -20,7 +20,6 @@
   "separateMajorMinor": true,
   "separateMinorPatch": true,
   "separateMultipleMajor": true,
-  "separateMultipleMinor": true,
   "configMigration": true,
   "platformCommit": "disabled",
   "semanticCommits": "enabled",
