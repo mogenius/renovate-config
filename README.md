@@ -45,7 +45,7 @@ Repositories that are not using the gitops preset can opt into automerging patch
 - **Go version** range strategy set to `bump`
 - **Custom regex managers** for:
   - Inline `# renovate: datasource=...` annotations in any file
-  - `_VERSION` ARG/ENV variables in Dockerfiles
+  - `_VERSION` ARG/ENV variables in Dockerfiles, requiring a `# renovate: datasource=... depName=...` comment on the line directly above
   - Docker image references in YAML manifests (with digest support)
   - `version_manifest.txt` files
 - Timezone: `Europe/Berlin`
