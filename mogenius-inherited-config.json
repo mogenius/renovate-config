@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":autodetectPinVersions",
     ":dependencyDashboard",
     ":disableRateLimiting",
     ":enableRenovate",
@@ -68,6 +67,16 @@
         "github-actions"
       ],
       "pinDigests": true
+    },
+    {
+      "description": "Tool versions passed to known actions via `with:` (e.g. golangci-lint-action `version`) are release tags, not action refs: pinning them to a SHA breaks the input and fails the branch with 'update failure'",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchDepTypes": [
+        "uses-with"
+      ],
+      "pinDigests": false
     },
     {
       "matchManagers": [
