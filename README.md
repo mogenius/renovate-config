@@ -40,7 +40,7 @@ Repositories that are not using the gitops preset can opt into automerging patch
 - **Lock file maintenance** enabled
 - **npm majors** of third-party packages need approval via the Dependency Dashboard (patch/minor create PRs directly)
 - **TypeScript** held below 7 until the tooling supports TS 7's new compiler API
-- **GitHub Actions** pinned to digest (no auto-digest bumps); tool versions passed via `with:` (e.g. `golangci-lint-action` `version`) stay on tags
+- **GitHub Actions** pinned to digest via `helpers:pinGitHubActionDigests` (no auto-digest bumps)
 - **ArgoCD** manifest support for `.yaml` files
 - **Go version** range strategy set to `bump`
 - **Custom regex managers** for:
