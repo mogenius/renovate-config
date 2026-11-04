@@ -3,7 +3,7 @@
   "extends": [
     "github>mogenius/renovate-config//mogenius-inherited-config.json#main"
   ],
-  "platformAutomerge": true,
+  "platformAutomerge": false,
   "automergeSchedule": [
     "* 0-6 * * 1-5"
   ],
