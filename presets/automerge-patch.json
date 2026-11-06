@@ -3,9 +3,11 @@
   "description": "Automerge patch updates",
   "packageRules": [
     {
+      "description": "0.x versions may break in any update, so they are never automerged",
       "matchUpdateTypes": [
         "patch"
       ],
+      "matchCurrentVersion": "!/^v?0\\./",
       "automerge": true,
       "addLabels": [
         "automerge"
