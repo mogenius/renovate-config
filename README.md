@@ -42,6 +42,8 @@ Repositories that are not using the gitops preset can opt into automerging patch
 - **TypeScript** held below 7 until the tooling supports TS 7's new compiler API
 - **GitHub Actions** pinned to digest via `helpers:pinGitHubActionDigests` (no auto-digest bumps)
 - **ArgoCD** manifest support for `.yaml` files
+- **No automerge for 0.x versions** (gitops and automerge-patch presets): any 0.x update may contain breaking changes
+- **Crossplane** package support (Providers, Functions, Configurations) for `.yaml` files (gitops preset)
 - **Go version** range strategy set to `bump`
 - **Custom regex managers** for:
   - Inline `# renovate: datasource=...` annotations in any file
